@@ -1,0 +1,6 @@
+Project: Alpha Secure App
+Requirement: User Registration
+The user should be able to register using an email, a password (min 8 chars, 1 uppercase, 1 symbol), and a phone number. 
+Email verification is mandatory. 
+Duplicate emails should be rejected.
+Phone number must be in international format.
