@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1880","should not show 80C deduction input in new regime","chromium","2026-01-30","passed","2026-01-30","Tax Calculation - New Regime","","",""
+"","3679","should calculate tax for salary 5L in new regime","chromium","2026-01-30","passed","2026-01-30","Tax Calculation - New Regime","","",""
+"","8077","should calculate tax for salary 5L with no deductions","chromium","2026-01-30","passed","2026-01-30","Tax Calculation - Old Regime","","",""
+"","4305","should calculate tax for salary 10L with 80C deduction","chromium","2026-01-30","passed","2026-01-30","Tax Calculation - Old Regime","","",""

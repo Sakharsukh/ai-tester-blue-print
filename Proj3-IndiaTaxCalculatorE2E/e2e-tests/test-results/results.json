@@ -1,0 +1,271 @@
+{
+  "config": {
+    "configFile": "E:\\AITesterBluePrint_VS\\ai-tester-blue-print\\Proj3-IndiaTaxCalculatorE2E\\e2e-tests\\playwright.config.ts",
+    "rootDir": "E:/AITesterBluePrint_VS/ai-tester-blue-print/Proj3-IndiaTaxCalculatorE2E/e2e-tests/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/AITesterBluePrint_VS/ai-tester-blue-print/Proj3-IndiaTaxCalculatorE2E/e2e-tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "E:/AITesterBluePrint_VS/ai-tester-blue-print/Proj3-IndiaTaxCalculatorE2E/e2e-tests/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "E:\\AITesterBluePrint_VS\\ai-tester-blue-print\\Proj3-IndiaTaxCalculatorE2E\\e2e-tests\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "detail": true,
+          "outputFolder": "allure-results",
+          "suiteTitle": false
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ui\\tax-calculation.spec.ts",
+      "file": "ui/tax-calculation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Tax Calculation - Old Regime",
+          "file": "ui/tax-calculation.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should calculate tax for salary 5L with no deductions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8077,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T18:05:32.533Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\AITesterBluePrint_VS\\ai-tester-blue-print\\Proj3-IndiaTaxCalculatorE2E\\e2e-tests\\test-results\\ui-tax-calculation-Tax-Cal-fc384-alary-5L-with-no-deductions-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "138f0e900d5413f52f23-0a93b48ab08c0800b467",
+              "file": "ui/tax-calculation.spec.ts",
+              "line": 12,
+              "column": 9
+            },
+            {
+              "title": "should calculate tax for salary 10L with 80C deduction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4305,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T18:05:32.545Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\AITesterBluePrint_VS\\ai-tester-blue-print\\Proj3-IndiaTaxCalculatorE2E\\e2e-tests\\test-results\\ui-tax-calculation-Tax-Cal-dc773-lary-10L-with-80C-deduction-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "138f0e900d5413f52f23-b71bf4694d549e803020",
+              "file": "ui/tax-calculation.spec.ts",
+              "line": 24,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "Tax Calculation - New Regime",
+          "file": "ui/tax-calculation.spec.ts",
+          "line": 38,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should calculate tax for salary 5L in new regime",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3679,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T18:05:37.385Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\AITesterBluePrint_VS\\ai-tester-blue-print\\Proj3-IndiaTaxCalculatorE2E\\e2e-tests\\test-results\\ui-tax-calculation-Tax-Cal-409a7-for-salary-5L-in-new-regime-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "138f0e900d5413f52f23-b8da9553a4aa40064155",
+              "file": "ui/tax-calculation.spec.ts",
+              "line": 46,
+              "column": 9
+            },
+            {
+              "title": "should not show 80C deduction input in new regime",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1880,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T18:05:41.124Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\AITesterBluePrint_VS\\ai-tester-blue-print\\Proj3-IndiaTaxCalculatorE2E\\e2e-tests\\test-results\\ui-tax-calculation-Tax-Cal-9518a-duction-input-in-new-regime-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "138f0e900d5413f52f23-8bc431abd3aa9a73e273",
+              "file": "ui/tax-calculation.spec.ts",
+              "line": 58,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-30T18:05:25.722Z",
+    "duration": 20669.010000000002,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

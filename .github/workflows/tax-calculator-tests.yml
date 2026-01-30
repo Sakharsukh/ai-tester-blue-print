@@ -1,0 +1,81 @@
+name: India Tax Calculator E2E Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    # 1. Install & Build Backend
+    - name: Install Backend Deps
+      run: npm ci
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/tax-api
+
+    - name: Build Backend
+      run: npm run build
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/tax-api
+
+    - name: Start Backend
+      run: |
+        npm start &
+        echo "Waiting for API..."
+        npx wait-on http://localhost:3000/health
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/tax-api
+      env:
+        PORT: 3000
+
+    # 2. Install & Build Frontend
+    - name: Install Frontend Deps
+      run: npm ci
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/tax-ui
+
+    - name: Start Frontend
+      run: |
+        npm run dev -- --host &
+        echo "Waiting for UI..."
+        npx wait-on http://localhost:5173
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/tax-ui
+
+    # 3. Setup & Run Playwright
+    - name: Install Playwright Deps
+      run: npm ci
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/e2e-tests
+
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/e2e-tests
+
+    - name: Run Playwright Tests
+      run: npx playwright test
+      working-directory: ./Proj3-IndiaTaxCalculatorE2E/e2e-tests
+
+    # 4. Upload Artifacts
+    - name: Upload Playwright Report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: playwright-report
+        path: ./Proj3-IndiaTaxCalculatorE2E/e2e-tests/playwright-report/
+        retention-days: 30
+
+    - name: Upload Allure Results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-results
+        path: ./Proj3-IndiaTaxCalculatorE2E/e2e-tests/allure-results/
+        retention-days: 7
