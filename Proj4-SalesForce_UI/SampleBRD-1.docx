@@ -1,0 +1,311 @@
+Value Statement: 
+
+As a User, 
+
+I want to access ROC Case listing Page 
+
+So that, I can view the recovery case listing UI Tabs in the UTW Recoveries based on the logged in persona 
+
+  
+
+Process Overview: 
+
+After SSO login and landing on the Cases page, users see main navigation tabs for the UTW Recoveries system. Access to these tabs is determined by their user persona. This structure ensures that each user accesses only the features relevant to their role. 
+
+Main Tabs Under UTW Recoveries UI Screen: 
+
+Cases 
+
+Workforce Management 
+
+Report Scheduler 
+
+DBR Load 
+
+Bump Data Management 
+
+GGR Management 
+
+Excel Communication 
+
+External Links 
+
+Manage Templates 
+
+Manage Consolidated Group 
+
+User Level Access to UI Screens 
+
+The following table summarizes the access permissions for each user role with respect to the UI screens listed above: 
+
+Main page UI Screens 
+
+Manager 
+
+Researcher 
+
+QC 
+
+Guest User (View only) 
+
+Cases 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Workforce Management 
+
+Yes 
+
+  
+
+  
+
+  
+
+Report Scheduler 
+
+Yes 
+
+  
+
+  
+
+  
+
+DBR Load 
+
+Yes 
+
+  
+
+  
+
+  
+
+Bump Data Management 
+
+Yes 
+
+  
+
+  
+
+  
+
+GGR Management 
+
+Yes 
+
+  
+
+  
+
+  
+
+Excel Communication 
+
+Yes 
+
+  
+
+  
+
+  
+
+External Links 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Manage Templates 
+
+Yes 
+
+  
+
+  
+
+  
+
+Manage Consolidated Group 
+
+Yes 
+
+Yes 
+
+  
+
+  
+
+  
+
+Acceptance Criteria: 
+
+Persona-based Tab Display 
+
+The main navigation tabs must be visible for each user persona strictly according to the access matrix provided above. 
+
+Tab Navigation 
+
+Users can navigate between the UI tabs by clicking on the tab names in the top navigation section. 
+
+Navigation between tabs occurs without requiring additional login.------------------------------- 
+
+-------------------------------------------------------------------------------------- 
+
+  
+
+Sorting and Filter options for case listing page details 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Overview 
+
+Details 
+
+Assignee 
+
+Description 
+
+  
+
+Value Statement: 
+
+As a User, 
+
+I want sort and filter options available in the Case listing page 
+
+So that, I can check and prioritize the recovery processing activities. 
+
+  
+
+Process Overview 
+
+Sorting and filtering options in the Cases page allow users to efficiently find and prioritize recovery claims. Filters and sorts are tailored to user roles and case data, enabling targeted access, prioritization, and improved workflow efficiency. 
+
+Acceptance Criteria 
+
+Filtering 
+
+Workstream Filter 
+
+Only managers see Workstream as a dropdown (Triage/Agency, Client/Title, Homeowner, Quality Check, Management/Payments). For other roles, Workstream is displayed as read-only, reflecting their assignment. 
+
+Selecting a workstream as a manager lists all claims in that workstream; other personas see only claims assigned to them. 
+
+  
+
+Manager: 
+
+  
+
+  
+
+Researcher: 
+
+  
+
+  
+
+Assignment Status Filter 
+
+All user personas can filter on Assignment Status, with dropdown options:  
+
+All (Excluding Completed) – default, lists open/non-completed claims. 
+
+Unassigned 
+
+Assigned 
+
+In Progress 
+
+On Hold 
+
+Completed 
+
+  
+
+  
+
+Duration Filter 
+
+All personas have this filter, based on when claims were added to UTW Recoveries:  
+
+7 Days (default): Last 7 days 
+
+1 Month: Last month 
+
+3 Months: Last 3 months 
+
+Custom: User can specify a custom range 
+
+  
+
+  
+
+Client Filter 
+
+All users can filter claims by client, selecting from a dropdown list of client names. This option is not needed as we imple 
+
+  
+
+  
+
+Sorting 
+
+Fields in the case listing table with sorting capability display up/down arrows in the column headers. 
+
+Clicking a sortable column toggles sort order; sorting affects only the claims currently listed for the user. 
+
+Sorting is enabled for:  
+
+Base Amount: Sorts numerically (ascending/descending) 
+
+Claim Balance: Sorts numerically (ascending/descending) 
+
+Tax Agency: Sorts alphabetically (A–Z/Z–A) 
+
+Next Follow Up Date: Sorts by date (oldest-newest/newest-oldest) 
+
+Researcher Name: Sorts alphabetically 
+
+Recovery ID: Sorts numerically (lowest-highest/highest-lowest) 
+
+SLA: Sorts numerically 
+
+   
+
+Acceptance Criteria: 
+
+Sort & Filter options needs to be available in the case listing page 
+
+  
+
+Given that user has access to ROC UTW Recoveries Case listing page 
+
+When there is sort or filter the claim options are needed 
+
+Then the user should have the provisions in Case Listing page 
+
+ 
