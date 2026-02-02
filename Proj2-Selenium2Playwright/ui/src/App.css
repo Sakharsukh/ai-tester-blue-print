@@ -1,0 +1,155 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.header h1 {
+  background: linear-gradient(to right, #646cff, #a259ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.path-input {
+  padding: 0.8rem;
+  width: 400px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+.convert-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #646cff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.convert-btn:hover {
+  background: #535bf2;
+}
+
+.convert-btn:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  background: rgba(255, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.workspace {
+  display: flex;
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1a1a1a;
+  border-right: 1px solid #444;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 1px solid #444;
+  background: #2a2a2a;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar li:hover {
+  background: #333;
+}
+
+.sidebar li.active {
+  background: #646cff;
+  color: white;
+}
+
+.editor-area {
+  flex: 1;
+  overflow-y: auto;
+  text-align: left;
+  background: #1e1e1e;
+}
+
+.diff-container h3 {
+  padding: 1rem;
+  margin: 0;
+  background: #2a2a2a;
+  border-bottom: 1px solid #444;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.demo-btn {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #2a2a2a;
+  color: #ddd;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.demo-btn:hover {
+  background: #333;
+  border-color: #646cff;
+  color: white;
+}
