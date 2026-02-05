@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🔍 Findings & Research
 
 ## 🧪 Discoveries
@@ -6,7 +6,7 @@
 
 ## 🚧 Constraints
 - *To be tracked during execution*
-=======
+
 # Findings
 
 ## Research
@@ -24,4 +24,3 @@
 - **Local Environment**: Must run locally on user's machine.
 - **Model**: Specific dependency on `llama3.2`.
 - **UI**: Chat-based interface.
->>>>>>> 61fa15eb61ad8b939b66a5d00203a6fd1fcd07bf

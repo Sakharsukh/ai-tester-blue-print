@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🗺️ Task Plan: Local Test Case Generator
 
 ## 🏁 Goal
@@ -34,7 +33,7 @@ Build a local LLM-based test case generator that takes user input and produces s
 ### Phase 5: Trigger (Deployment)
 - [x] Finalize local execution trigger
 - [x] Complete documentation and Maintenance Log
-=======
+
 # Task Plan
 
 ## Phases
@@ -79,4 +78,3 @@ Build a local LLM-based test case generator that takes user input and produces s
 - [ ] Ollama Connection Verified
 - [ ] First Test Case Generated
 
->>>>>>> 61fa15eb61ad8b939b66a5d00203a6fd1fcd07bf

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 💎 Project Constitution: Local Test Case Generator
 
 ## 📊 Data Schemas
@@ -44,7 +44,7 @@
 ## 🪵 Maintenance Log
 - **2026-01-29:** Project Initialized using B.L.A.S.T. Protocol.
 - **2026-01-29:** Blueprint finalized: Local LLM focus via Ollama.
-=======
+
 # Project Constitution
 
 ## Data Schemas
@@ -83,4 +83,4 @@ interface OllamaResponse {
 2. **State Management**: React Local State (for chat history).
 3. **API Layer**: Direct fetch calls to local Ollama instance (proxy might be needed for CORS).
 
->>>>>>> 61fa15eb61ad8b939b66a5d00203a6fd1fcd07bf
+

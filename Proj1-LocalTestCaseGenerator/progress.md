@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📈 Progress Log
 
 ## ✅ Completed Tasks
@@ -17,7 +17,6 @@
 
 ## 🧪 Test Results
 - *None*
-=======
 # Progress
 
 ## Log
@@ -49,4 +48,3 @@
 1.  **Ollama**: `ollama serve` (Ensure `llama3.2` is pulled).
 2.  **Frontend**: `cd local-testcase-gen && npm run dev`
 
->>>>>>> 61fa15eb61ad8b939b66a5d00203a6fd1fcd07bf
